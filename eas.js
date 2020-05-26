@@ -18,5 +18,11 @@ function createDivs(n) {
 let n=prompt("How many squares on each side?");
 createDivs(n);
 
-const grid = document.querySelectorAll(".grids");
+function clearPage() {
+    container.innerHTML="";
+    let n=prompt("How many squares on each side?");
+    createDivs(n);
+}
 
+const button = document.querySelector("#btn");
+button.addEventListener("click", clearPage);
